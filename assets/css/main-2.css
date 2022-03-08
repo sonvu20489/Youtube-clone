@@ -1,0 +1,107 @@
+:root{
+    --black-button: #FFFFFF1A;
+}
+.sub-nav{
+    position: fixed;
+    background-color: var(--black-color);
+    height: 60px;
+    top: 56px;
+    left: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center; 
+    border-top: 1px solid rgba(167, 164, 164,0.5) ;
+    border-bottom: 1px solid rgba(167, 164, 164,0.5) ;
+    z-index: 1;
+}
+.sub-nav__option{
+    flex: 0 0 auto;
+    padding: 5px 16px;
+    font-size: 12px;
+    background-color: var(--black-button);
+    border-radius: 12px;
+    color: var(--white-color);
+    margin: 0 4px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    line-height: inherit;
+    /* flex: 1; */
+}
+.sub-nav__option:hover{
+    background-color: rgba(255, 255, 225, 0.5);
+}
+.video_container{
+    margin-top: 120px;
+    margin-left: 250px;
+    padding: 20px;
+    width: calc(100%-250px);
+
+}
+.video_container_large{
+    margin-left: 70px;
+    width: calc(100%-70px);
+
+}
+.video_content{
+    display: flex;
+    flex-wrap: wrap;
+}
+.row{
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.video_content__col{
+    flex: 0 0 25%;
+    max-width: 25%;
+    position: relative;
+    min-width: 270px;
+    min-height: 271px;
+    padding-left: 15px;
+    padding-right: 16px;
+}
+.video_content__col a{
+    text-decoration: none;
+}
+.video_thumbal{
+    position: relative;
+}
+.thumbal_video{
+    width: 100%;
+    height: 146px;
+    object-fit: cover;
+}
+.timevideo{
+    position: absolute;
+    bottom: 10px;
+    right: 8px;
+    color: var(--white-color);
+    padding: 4px;
+    font-size: 14px;
+    background-color: black;
+}
+.video_content__video_info{
+    display: flex;
+    margin-top: 8px;
+    color: var(--white-color);
+}
+.channel_img{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    margin-right: 3px ;
+}
+.info1{
+    font-size: 14px;
+}
+.video_description{
+    display: -webkit-box;
+    font-size: 14px;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+.video_view{
+    font-size: 14px;
+    margin-left: 44px;
+    color: #ccc;
+}
